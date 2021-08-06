@@ -3,7 +3,7 @@ package backtrack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RestoreIPAddresses {
+public class RestoreIPAddresses93 {
     ArrayList<String> res = new ArrayList<>();
 
     public List<String> restoreIpAddresses(String s) {
