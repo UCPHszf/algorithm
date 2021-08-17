@@ -49,7 +49,6 @@ public class PathSumIII437 {
         target = targetSum;
         mem.put(0,1);//前缀树为0的个数至少是一个
         return dfs(root,0);
-        new Double(Double.valueOf((double) 1));
     }
 
     public int dfs(TreeNode root,int curSum){
