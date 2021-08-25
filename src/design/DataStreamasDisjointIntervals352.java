@@ -45,7 +45,7 @@ public class DataStreamasDisjointIntervals352 {
     }
 
     public void addNum(int val) {
-        Optional<Pair<Long, Long>> op = s.stream().filter(p -> p.lowerBound > val)
+        Optional<Pair<Long, Long>> op = s.stream().filter(p -> p.lowerBound > val);
 
         if (op.isPresent()) {
             Pair<Long, Long> pair = op.get();
