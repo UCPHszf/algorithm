@@ -1,13 +1,14 @@
 package datastructure;
 
+import java.util.Collection;
 import java.util.function.Predicate;
 
 public class Lower_Bound<E> {
-    public int lower_bound(E[] arr, Predicate<E> predicate) {
-        for (int i = 0; i < arr.length; i++) {
-            if (predicate.test(arr[i]))
-                return i;
+    public E lower_bound(Collection<E> collection, E e, Predicate<E> predicate) {
+        for (E item : collection) {
+            if (predicate.test(item))
+                return item;
         }
-        return -1;
+        return null;
     }
 }
