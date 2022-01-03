@@ -22,14 +22,32 @@ public class RemoveInvalidParentheses301 {
     }
 
 
-    void dfs(String s, int offset, String cur, int cnt, int l, int r) {
+    void dfs(String s, int offset, String cur, int diff, int l, int r) {
         if (offset == s.length()) {
-            if (cnt == 0) res.add(cur);
+            if (diff == 0) res.add(cur);
             return;
         }
-        if (s.charAt(offset) != '(' && s.charAt(offset) != ')') dfs(s, offset + 1, cur + s.charAt(offset), cnt, l, r);
+        if (s.charAt(offset) != '(' && s.charAt(offset) != ')') dfs(s, offset + 1, cur + s.charAt(offset), diff, l, r);
         else if (s.charAt(offset) == '(') {
             int k = offset;
+            while (k <= s.length() && s.charAt(k) == '(') k++;
+            l -= k - offset;
+            for (int i = k - offset; i >= 0; i--) {
+                if (l >= 0) dfs(s, k, cur, diff, l, r);
+                cur += '(';
+                diff++;
+                l++;
+            }
+        } else if (s.charAt(offset) == ')') {
+            int k = offset;
+            while (k <= s.length() && s.charAt(k) == ')') k++;
+            r -= k - offset;
+            for (int i = k - offset; i >= 0; i--) {
+                if (diff >= 0 && r >= 0) dfs(s, k, cur, diff, l, r);
+                cur += ')';
+                diff--;
+                r++;
+            }
         }
     }
 }

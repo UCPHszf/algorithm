@@ -23,10 +23,10 @@ public class InsertionSortList147 {
                         while (!((tmp.val < ne.val) && (tmp.next.val > ne.val))) {
                             tmp = tmp.next;
                         }
-                        ListNode nene=ne.next;
-                        ne.next=tmp.next;
-                        tmp.next=ne;
-                        iter.next=nene;
+                        ListNode nene = ne.next;
+                        ne.next = tmp.next;
+                        tmp.next = ne;
+                        iter.next = nene;
                     }
                 }
             } else {
