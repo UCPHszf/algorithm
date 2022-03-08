@@ -9,6 +9,6 @@ public class MedianofTwoSortedArrays4 {
     double binarySearch(int[] nums1, int l1, int r1, int[] nums2, int l2, int r2) {
         int range1 = r1 - l1, range2 = r2 - l2;
         int mid1 = nums1[(l1 + r1) >> 1], mid2 = nums2[(l2 + r2) >> 1];
-
+        return 0;
     }
 }

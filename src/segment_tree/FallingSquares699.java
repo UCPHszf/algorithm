@@ -17,7 +17,7 @@ public class FallingSquares699 {
     List<Integer> discrete = new ArrayList<>();
 
     int get(){
-        return discrete.stream().
+        return 0;
     }
 
     public List<Integer> fallingSquares(int[][] positions) {

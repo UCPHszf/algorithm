@@ -11,6 +11,7 @@ public class BipartiteGraphCheck785 {
             for (int j = 0; j < graph[i].length; j++) {
                 list.add(graph[i][j]);
             }
+            g.add(list);
         }
         for (int i = 0; i < graph.length; i++) {
             if (g.get(i).size() > 0 && color[i] == 0) {
