@@ -31,6 +31,6 @@ public class NextGreaterElementII503 {
             }
             s.push(new KV(nums[i], i));
         }
-
+        return null;
     }
 }
