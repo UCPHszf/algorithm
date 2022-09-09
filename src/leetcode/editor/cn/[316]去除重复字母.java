@@ -35,7 +35,7 @@ package leetcode.editor.cn;//给你一个字符串 s ，请你去除字符串中
 import java.util.Stack;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class EraseDuplicateCharacter316 {
     public String removeDuplicateLetters(String s) {
         Stack<Character> stack = new Stack<>();
         int[] cnt = new int[26];
