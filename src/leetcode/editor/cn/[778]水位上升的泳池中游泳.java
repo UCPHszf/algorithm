@@ -48,7 +48,7 @@ package leetcode.editor.cn;//在一个 n x n 的整数矩阵 grid 中，每一�
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class SwimInWater {
 
     int n;
     int[][] g;

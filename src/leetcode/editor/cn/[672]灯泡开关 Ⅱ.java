@@ -39,7 +39,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class BulbSwitchII672 {
 
     int[][] state =
             {{1, 1, 1, 1, 1, 1}, {0, 0, 0, 0, 0, 0},
