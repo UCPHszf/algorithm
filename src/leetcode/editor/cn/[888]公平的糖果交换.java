@@ -53,7 +53,7 @@ package leetcode.editor.cn;//爱丽丝和鲍勃拥有不同总数量的糖果。
 import java.util.HashSet;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class FairCandySwap888 {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int sum_a = 0, sum_b = 0;
         int[] res = new int[2];
