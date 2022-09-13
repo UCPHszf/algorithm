@@ -32,7 +32,7 @@ package leetcode.editor.cn;//给你一个字符串 s，找到 s 中最长的回�
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class LongestPalindrome5 {
     public String longestPalindrome(String s) {
         int n = s.length();
         boolean[][] dp = new boolean[n][n];
