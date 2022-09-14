@@ -47,11 +47,10 @@ package leetcode.editor.cn;//给定一个包含红色、白色和蓝色、共 n 
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class SortColor75 {
+class SortColor76 {
     int[] _nums;
 
     public void sortColors(int[] nums) {
-        _nums = nums;
         for (int i = 0, j = 0, k = nums.length - 1; i <= k; ) {
             if (nums[i] == 0) swap(i++, j++);
             else if (nums[i] == 2) swap(i, k--);
