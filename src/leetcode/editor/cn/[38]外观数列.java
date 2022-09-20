@@ -68,23 +68,23 @@ package leetcode.editor.cn;//给定一个正整数 n ，输出外观数列的第
 //leetcode submit region begin(Prohibit modification and deletion)
 class CountAndSay38 {
     public String countAndSay(int n) {
-        String init = "1";
-        if (n == 1) return init;
+        String res = "1";
+        if (n == 1) return res;
         for (int i = 1; i < n; i++) {
-            String res = "";
-            for (int j = 0, cnt = 1; j < init.length(); j++) {
-                char ch = init.charAt(j);
-                while (j + 1 < init.length() && init.charAt(j + 1) == ch) {
+            String tmp = "";
+            for (int j = 0, cnt = 1; j < res.length(); j++) {
+                char ch = res.charAt(j);
+                while (j + 1 < res.length() && res.charAt(j + 1) == ch) {
                     j++;
                     cnt++;
                 }
                 String str = String.valueOf(cnt).concat(String.valueOf(ch));
-                res = res.concat(str);
+                tmp = tmp.concat(str);
                 cnt = 1;
             }
-            init = res;
+            res = tmp;
         }
-        return init;
+        return res;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

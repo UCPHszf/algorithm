@@ -53,6 +53,10 @@ package leetcode.editor.cn;//给定三个字符串 s1、s2、s3，请你帮忙�
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class InterleaveWord97 {
+
+    /*
+
+     */
     public boolean isInterleave(String s1, String s2, String s3) {
         if (s1.length() + s2.length() != s3.length()) return false;
         boolean[] dp = new boolean[s2.length() + 1];
@@ -63,8 +67,8 @@ class InterleaveWord97 {
                 if (i > 0) {
                     dp[j] = dp[j] && s1.charAt(i - 1) == s3.charAt(p);
                 }
-                if(j>0){
-                    dp[j] = dp[j]||(dp[j-1]&&s2.charAt(j-1)==s3.charAt(p));
+                if (j > 0) {
+                    dp[j] = dp[j] || (dp[j - 1] && s2.charAt(j - 1) == s3.charAt(p));
                 }
             }
         }
