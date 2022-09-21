@@ -31,7 +31,7 @@ package leetcode.editor.cn;//给定一个整数数组 nums 和一个正整数 k�
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class KEquivalentSubset698 {
+class KEquivalentSubsets {
     int[] nums;
     boolean[] st;
     int k;
@@ -50,11 +50,6 @@ class KEquivalentSubset698 {
         }
         sum = sum / k;
         Arrays.sort(nums);
-        for (int i = 0, j = nums.length - 1; i < j; i++, j--) {
-            int temp = nums[i];
-            nums[i] = nums[j];
-            nums[j] = temp;
-        }
         return dfs(0, 0, sum, 0);
 
     }
