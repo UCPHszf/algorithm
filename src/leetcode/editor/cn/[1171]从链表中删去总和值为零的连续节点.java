@@ -41,7 +41,7 @@ package leetcode.editor.cn;//给你一个链表的头节点 head，请你编写�
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
-//import datastructure.ListNode;
+import datastructure.ListNode;
 
 import java.util.HashMap;
 import java.util.Map;
